@@ -1,16 +1,19 @@
-# Discussion 1 - Billing Management System
+# Billing Management System | Discussion 1
 
-Static GitHub Pages site for the first technical discussion.
+Public GitHub Pages microsite for the Billing Management System capstone project.
 
-## Content
+## Discussion 1 Scope
 
-- Bilingual Arabic/English explanation
-- Login page screenshot
-- Admin Dashboard screenshot
-- User Dashboard screenshot
-- Downloadable PDF study guide
+- Login page
+- Admin dashboard
+- User dashboard
+- Role-based dashboard access
+- Dashboard KPI explanation
+- Technology stack overview
 
-## GitHub Pages
+## Team
 
-Use the repository root as the GitHub Pages source.
+- Mohammed Mirghani 202103066
+- Ahmed Awad 202103107
 
+Future University - Sudan | Faculty of Information Technology | Group 16

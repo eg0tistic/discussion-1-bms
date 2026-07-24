@@ -3,33 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Discussion 1 - Billing Management System</title>
-  <meta name="description" content="Bilingual Discussion 1 guide for the Billing Management System capstone project." />
+  <title>Billing Management System | Discussion 1</title>
+  <meta name="description" content="Discussion 1 product presentation for the Billing Management System capstone project by Future University Group 16." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="hero">
     <nav class="nav" aria-label="Main navigation">
-      <a href="#overview">Overview</a>
-      <a href="#login">Login</a>
-      <a href="#dashboard">Dashboard</a>
-      <a href="#qa">Q&A</a>
+      <a class="brand" href="#top">
+        <img src="assets/future-university-logo.png" alt="Future University logo" />
+        <span>Billing Management System</span>
+      </a>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#roles">Roles</a>
+        <a href="#technology">Technology</a>
+      </div>
     </nav>
-    <div class="hero-grid">
+
+    <div id="top" class="hero-grid">
       <section class="hero-copy">
-        <p class="eyebrow">Discussion 1 | Group 16</p>
+        <p class="eyebrow">Future University - Sudan | Group 16 | Discussion 1</p>
         <h1>Billing Management System</h1>
         <p>
-          A bilingual first-discussion guide for the capstone project.
-          The focus is only on the Login page and the Admin/User Dashboard.
+          A bilingual web prototype that introduces secure access, role-based dashboards,
+          and explainable billing summaries for business financial records.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="assets/Discussion_1_Bilingual_Explanation.pdf" download>Download PDF</a>
-          <a class="button ghost" href="#quick-script">Study Script</a>
+          <a class="button primary" href="#prototype">View Prototype Pages</a>
+          <a class="button ghost" href="assets/Discussion_1_Bilingual_Explanation.pdf" download>Download Project Brief</a>
+        </div>
+        <div class="team">
+          <strong>Presented by</strong>
+          <span>Mohammed Mirghani 202103066</span>
+          <span>Ahmed Awad 202103107</span>
         </div>
       </section>
-      <figure class="hero-shot">
-        <img src="assets/login.png" alt="Billing Management System login page screenshot" />
+      <figure class="hero-visual">
+        <img src="assets/modern-product-hero.png" alt="Modern billing dashboard product visual" />
       </figure>
     </div>
   </header>
@@ -37,159 +49,113 @@
   <main>
     <section id="overview" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Project Idea</p>
-        <h2>شرح الفكرة العامة | General Idea</h2>
+        <p class="eyebrow">Product Overview</p>
+        <h2>A focused billing foundation for Discussion 1</h2>
+        <p>
+          The complete Billing Management System is planned to support users, invoices,
+          payments, customers, products, reports, and administration. This first discussion
+          presents the foundation only: Login and Dashboard.
+        </p>
       </div>
-      <div class="bilingual">
-        <article class="card ar" dir="rtl">
-          <h3>بالعربي السوداني</h3>
-          <p>
-            المشروع اسمو Billing Management System. هو نظام فوترة عام بيساعد في تنظيم
-            الفواتير والمدفوعات والمستخدمين، وبيدي ملخص سريع للوضع المالي.
-          </p>
-          <p>
-            في المناقشة الاولى ما حنشرح كل النظام. حنركز بس على صفحتين:
-            تسجيل الدخول ولوحة المعلومات.
-          </p>
+      <div class="value-grid">
+        <article>
+          <span>01</span>
+          <h3>Problem</h3>
+          <p>Manual records slow billing, increase mistakes, and make balances difficult to track.</p>
         </article>
-        <article class="card en">
-          <h3>In English</h3>
-          <p>
-            The project is a general Billing Management System that helps organize
-            invoices, payments, users, and financial summaries.
-          </p>
-          <p>
-            Discussion 1 focuses only on two pages: the Login page and the Dashboard.
-          </p>
+        <article>
+          <span>02</span>
+          <h3>Objective</h3>
+          <p>Provide a simple bilingual system for access control and financial visibility.</p>
         </article>
-      </div>
-      <div class="flow" aria-label="Project flow">
-        <span>Problem</span>
-        <span>Login</span>
-        <span>Role Check</span>
-        <span>Dashboard</span>
-        <span>Summary</span>
+        <article>
+          <span>03</span>
+          <h3>Discussion Scope</h3>
+          <p>Demonstrate authentication, role separation, dashboard KPIs, and UI readiness.</p>
+        </article>
       </div>
     </section>
 
-    <section id="login" class="section split">
-      <div>
-        <p class="eyebrow">login_screen.dart</p>
-        <h2>Login Page</h2>
-        <div class="bilingual compact">
-          <article class="card ar" dir="rtl">
-            <h3>الشرح</h3>
-            <ul>
-              <li>المستخدم يدخل الايميل وكلمة المرور.</li>
-              <li>النظام يتحقق من الحساب.</li>
-              <li>لو الحساب صحيح، يمشي للداشبورد المناسبة.</li>
-              <li>الصفحة فيها تغيير لغة، Dark Mode، و Forgot Password.</li>
-            </ul>
-          </article>
-          <article class="card en">
-            <h3>Explanation</h3>
-            <ul>
-              <li>The user enters email and password.</li>
-              <li>The system validates the account.</li>
-              <li>If the account is valid, it opens the correct dashboard.</li>
-              <li>The page includes language, dark mode, and reset password.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-      <figure class="screen-card">
-        <img src="assets/login.png" alt="Login page screenshot" />
-      </figure>
-    </section>
-
-    <section id="dashboard" class="section">
+    <section id="prototype" class="section">
       <div class="section-heading">
-        <p class="eyebrow">dashboard_screen.dart</p>
-        <h2>Admin Dashboard vs User Dashboard</h2>
+        <p class="eyebrow">Prototype Pages</p>
+        <h2>Login and dashboard are the visible product experience</h2>
       </div>
       <div class="screens">
         <figure class="screen-card">
-          <img src="assets/admin-dashboard.png" alt="Admin dashboard screenshot" />
-          <figcaption>Admin Dashboard: KPIs, revenue chart, and user management.</figcaption>
+          <img src="assets/login.png" alt="Billing Management System login page screenshot" />
+          <figcaption>Login: email/password access, language control, dark mode, and password reset.</figcaption>
         </figure>
         <figure class="screen-card">
-          <img src="assets/user-dashboard.png" alt="User dashboard screenshot" />
-          <figcaption>User Dashboard: invoice follow-up and daily billing summary.</figcaption>
+          <img src="assets/admin-dashboard.png" alt="Billing Management System admin dashboard screenshot" />
+          <figcaption>Admin Dashboard: business KPIs, revenue chart, and user management.</figcaption>
         </figure>
       </div>
-      <div class="bilingual">
-        <article class="card ar" dir="rtl">
-          <h3>الفرق</h3>
-          <p>
-            المدير بشوف ملخص عام وادارة مستخدمين. المستخدم العادي بشوف متابعة الفواتير اليومية فقط.
-            لو المستخدم حاول يدخل لوحة المدير، النظام يرجعو للوحة المستخدم.
-          </p>
-        </article>
-        <article class="card en">
-          <h3>Difference</h3>
-          <p>
-            Admin sees management and overall summaries. A normal user only sees daily invoice follow-up.
-            If a user tries to open the admin page, the app redirects them back to the user dashboard.
-          </p>
-        </article>
+    </section>
+
+    <section id="roles" class="section split">
+      <div>
+        <p class="eyebrow">Role-Based Access</p>
+        <h2>Admin and User dashboards are intentionally different</h2>
+        <p>
+          Admin users see management-level summaries and user administration.
+          Standard users see only the billing follow-up areas they need for daily work.
+          The route guard redirects any user who tries to open a dashboard that does not match their role.
+        </p>
+        <div class="role-points">
+          <span>Admin: KPIs, chart, users</span>
+          <span>User: daily invoices, focused summary</span>
+          <span>Guard: prevents admin-only visibility</span>
+        </div>
       </div>
+      <figure class="workflow">
+        <img src="assets/modern-billing-workflow.png" alt="Access and billing workflow visual" />
+      </figure>
     </section>
 
     <section class="section">
       <div class="section-heading">
-        <p class="eyebrow">Dashboard Numbers</p>
-        <h2>الارقام جاية من وين؟ | Where Numbers Come From</h2>
+        <p class="eyebrow">Dashboard Logic</p>
+        <h2>Dashboard numbers are calculated from invoice records</h2>
       </div>
       <div class="metric-grid">
         <article>
           <strong>Today Revenue</strong>
-          <span>SUM(paid amount today)</span>
+          <span>SUM paid amounts for invoices created today</span>
         </article>
         <article>
           <strong>Receivables</strong>
-          <span>Total invoices - paid amount</span>
+          <span>SUM total invoice value minus paid amount</span>
         </article>
         <article>
           <strong>Invoice Count</strong>
-          <span>COUNT(invoice records)</span>
+          <span>COUNT invoice records in the local dataset</span>
         </article>
       </div>
-      <p class="note" dir="rtl">
-        الارقام ما عشوائية. هي محسوبة من بيانات فواتير تجريبية عشان نثبت الفكرة في Discussion 1.
-      </p>
     </section>
 
-    <section id="quick-script" class="section script">
-      <p class="eyebrow">Study Script</p>
-      <h2>الخلاصة البتحفظها</h2>
-      <div class="script-box" dir="rtl">
-        في Discussion 1 انا بشرح الاساس بتاع النظام: Login و Dashboard.
-        Login بتتحقق من المستخدم، و Dashboard بتتغير حسب الدور.
-        المدير عندو صلاحيات ادارية، والمستخدم العادي عندو متابعة الفواتير فقط.
-        الارقام محسوبة من بيانات الفواتير، والنظام يدعم عربي/انجليزي و Dark Mode.
-      </div>
-    </section>
-
-    <section id="qa" class="section">
+    <section id="technology" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Ready Answers</p>
-        <h2>اسئلة ممكنة | Possible Questions</h2>
+        <p class="eyebrow">Technology Stack</p>
+        <h2>Simple tools selected for a clear capstone prototype</h2>
       </div>
-      <div class="qa-grid">
-        <article class="card">
-          <h3>Why only two pages?</h3>
-          <p>This is Discussion 1, so the scope is only the foundation: Login, role control, and Dashboard.</p>
-        </article>
-        <article class="card">
-          <h3>Why Admin and User?</h3>
-          <p>Because permissions are different. Admin manages the system, while User follows daily invoices.</p>
-        </article>
-        <article class="card">
-          <h3>Where do numbers come from?</h3>
-          <p>They are calculated from invoice records, not hard-coded random values.</p>
-        </article>
+      <div class="tech-grid">
+        <span>Flutter Web</span>
+        <span>Dart</span>
+        <span>Provider</span>
+        <span>SQLite</span>
+        <span>VS Code</span>
+        <span>GitHub Pages</span>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <img src="assets/future-university-logo.png" alt="Future University logo" />
+    <div>
+      <strong>Billing Management System | Discussion 1</strong>
+      <span>Future University - Sudan | Faculty of Information Technology | Group 16</span>
+    </div>
+  </footer>
 </body>
 </html>
