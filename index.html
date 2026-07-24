@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discussion 1 - Billing Management System</title>
+  <meta name="description" content="Bilingual Discussion 1 guide for the Billing Management System capstone project." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#overview">Overview</a>
+      <a href="#login">Login</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#qa">Q&A</a>
+    </nav>
+    <div class="hero-grid">
+      <section class="hero-copy">
+        <p class="eyebrow">Discussion 1 | Group 16</p>
+        <h1>Billing Management System</h1>
+        <p>
+          A bilingual first-discussion guide for the capstone project.
+          The focus is only on the Login page and the Admin/User Dashboard.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="assets/Discussion_1_Bilingual_Explanation.pdf" download>Download PDF</a>
+          <a class="button ghost" href="#quick-script">Study Script</a>
+        </div>
+      </section>
+      <figure class="hero-shot">
+        <img src="assets/login.png" alt="Billing Management System login page screenshot" />
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <section id="overview" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Project Idea</p>
+        <h2>شرح الفكرة العامة | General Idea</h2>
+      </div>
+      <div class="bilingual">
+        <article class="card ar" dir="rtl">
+          <h3>بالعربي السوداني</h3>
+          <p>
+            المشروع اسمو Billing Management System. هو نظام فوترة عام بيساعد في تنظيم
+            الفواتير والمدفوعات والمستخدمين، وبيدي ملخص سريع للوضع المالي.
+          </p>
+          <p>
+            في المناقشة الاولى ما حنشرح كل النظام. حنركز بس على صفحتين:
+            تسجيل الدخول ولوحة المعلومات.
+          </p>
+        </article>
+        <article class="card en">
+          <h3>In English</h3>
+          <p>
+            The project is a general Billing Management System that helps organize
+            invoices, payments, users, and financial summaries.
+          </p>
+          <p>
+            Discussion 1 focuses only on two pages: the Login page and the Dashboard.
+          </p>
+        </article>
+      </div>
+      <div class="flow" aria-label="Project flow">
+        <span>Problem</span>
+        <span>Login</span>
+        <span>Role Check</span>
+        <span>Dashboard</span>
+        <span>Summary</span>
+      </div>
+    </section>
+
+    <section id="login" class="section split">
+      <div>
+        <p class="eyebrow">login_screen.dart</p>
+        <h2>Login Page</h2>
+        <div class="bilingual compact">
+          <article class="card ar" dir="rtl">
+            <h3>الشرح</h3>
+            <ul>
+              <li>المستخدم يدخل الايميل وكلمة المرور.</li>
+              <li>النظام يتحقق من الحساب.</li>
+              <li>لو الحساب صحيح، يمشي للداشبورد المناسبة.</li>
+              <li>الصفحة فيها تغيير لغة، Dark Mode، و Forgot Password.</li>
+            </ul>
+          </article>
+          <article class="card en">
+            <h3>Explanation</h3>
+            <ul>
+              <li>The user enters email and password.</li>
+              <li>The system validates the account.</li>
+              <li>If the account is valid, it opens the correct dashboard.</li>
+              <li>The page includes language, dark mode, and reset password.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      <figure class="screen-card">
+        <img src="assets/login.png" alt="Login page screenshot" />
+      </figure>
+    </section>
+
+    <section id="dashboard" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">dashboard_screen.dart</p>
+        <h2>Admin Dashboard vs User Dashboard</h2>
+      </div>
+      <div class="screens">
+        <figure class="screen-card">
+          <img src="assets/admin-dashboard.png" alt="Admin dashboard screenshot" />
+          <figcaption>Admin Dashboard: KPIs, revenue chart, and user management.</figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="assets/user-dashboard.png" alt="User dashboard screenshot" />
+          <figcaption>User Dashboard: invoice follow-up and daily billing summary.</figcaption>
+        </figure>
+      </div>
+      <div class="bilingual">
+        <article class="card ar" dir="rtl">
+          <h3>الفرق</h3>
+          <p>
+            المدير بشوف ملخص عام وادارة مستخدمين. المستخدم العادي بشوف متابعة الفواتير اليومية فقط.
+            لو المستخدم حاول يدخل لوحة المدير، النظام يرجعو للوحة المستخدم.
+          </p>
+        </article>
+        <article class="card en">
+          <h3>Difference</h3>
+          <p>
+            Admin sees management and overall summaries. A normal user only sees daily invoice follow-up.
+            If a user tries to open the admin page, the app redirects them back to the user dashboard.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Dashboard Numbers</p>
+        <h2>الارقام جاية من وين؟ | Where Numbers Come From</h2>
+      </div>
+      <div class="metric-grid">
+        <article>
+          <strong>Today Revenue</strong>
+          <span>SUM(paid amount today)</span>
+        </article>
+        <article>
+          <strong>Receivables</strong>
+          <span>Total invoices - paid amount</span>
+        </article>
+        <article>
+          <strong>Invoice Count</strong>
+          <span>COUNT(invoice records)</span>
+        </article>
+      </div>
+      <p class="note" dir="rtl">
+        الارقام ما عشوائية. هي محسوبة من بيانات فواتير تجريبية عشان نثبت الفكرة في Discussion 1.
+      </p>
+    </section>
+
+    <section id="quick-script" class="section script">
+      <p class="eyebrow">Study Script</p>
+      <h2>الخلاصة البتحفظها</h2>
+      <div class="script-box" dir="rtl">
+        في Discussion 1 انا بشرح الاساس بتاع النظام: Login و Dashboard.
+        Login بتتحقق من المستخدم، و Dashboard بتتغير حسب الدور.
+        المدير عندو صلاحيات ادارية، والمستخدم العادي عندو متابعة الفواتير فقط.
+        الارقام محسوبة من بيانات الفواتير، والنظام يدعم عربي/انجليزي و Dark Mode.
+      </div>
+    </section>
+
+    <section id="qa" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Ready Answers</p>
+        <h2>اسئلة ممكنة | Possible Questions</h2>
+      </div>
+      <div class="qa-grid">
+        <article class="card">
+          <h3>Why only two pages?</h3>
+          <p>This is Discussion 1, so the scope is only the foundation: Login, role control, and Dashboard.</p>
+        </article>
+        <article class="card">
+          <h3>Why Admin and User?</h3>
+          <p>Because permissions are different. Admin manages the system, while User follows daily invoices.</p>
+        </article>
+        <article class="card">
+          <h3>Where do numbers come from?</h3>
+          <p>They are calculated from invoice records, not hard-coded random values.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
